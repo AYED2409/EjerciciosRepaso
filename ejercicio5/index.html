@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>Juego de los Barcos</title>
+</head>
+<body>
+    <h1>Juego de los barcos</h1>
+    <div class="container">
+        <div class="column">
+            <table id="table" class="fondoTablero">  
+            </table>
+            <h3 id="info" class="info"></h3>
+            <label for="jugada">Inserta Jugada con posiciones del 0 al 19 en el formato :(columna,fila)</label><br>
+            <span id="mensaje" class="mensaje"></span><br>
+            <input type="text" id="jugada" class="jugada">
+            <button type="button" id="btnEnviar">Enviar Jugada</button>
+        </div>
+        <div class="column">
+            <h1>Mis disparos Realizados</h2>
+            <table id="tableDisparo">
+            </table>
+            <h1>Disparos Realizados por el rival</h1>
+            <table id="tableDisparoB">
+            </table>
+        </div>
+    </div>
+<script src="./index.js" type="module"></script>
+</body>
+</html>

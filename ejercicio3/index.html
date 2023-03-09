@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>ApiFetch index2</title>
+</head>
+<body class="bg-dark text-white">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="btn navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" id="navHome">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="navLogin">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="navRegister">Register</a>
+          </li>
+          <li class="nav-item">
+            <a id="navProtected" class="nav-link" ">Protected</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row d-flex justify-content-center mt-5">
+      <main id="index" class="px-3">
+        <h1>Welcome.</h1>
+        <h3>Ejercicio2</h3>
+        <p class="lead"> Crea un ejemplo con API Fetch que use autentificación por usuario y contraseña usando unservidor de ejemplo.</p>
+      </main>  
+    </div>
+    <div id="login" class="row justify-content-center mt-5">
+      <h1 id="title"></h1>
+      <div id="target" class="col-4 mt-5 border border-primary rounded" >
+        <h1 class="text-center mt-3">Login</h1>
+        <form>
+          <div class="mb-3">
+            <label for="emailLogin" class="form-label">Email address</label>
+            <input type="email" required class="form-control border-primary-subtle" id="emailLogin" aria-describedby="emailHelp" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="passwdLogin" class="form-label">Password</label>
+              <input type="password" required class="form-control border-primary-subtle" id="passwdLogin">
+          </div>
+          <div class="row justify-content-center">
+            <div id="alert" class="alert col-11" role="alert">
+            </div>
+            <button type="button" id="btnLogin" class="btn btn-primary mb-3 col-3">Login</button>
+          </div>
+        </form>  
+      </div>
+    </div>
+    <div id="register" class="row justify-content-center mt-5">
+      <h1 id="titleRegister"></h1>
+      <div id="targetRegister" class="col-4 mt-5 border border-primary rounded" >
+        <h1 class="text-center mt-3">Register</h1>
+        <form>
+          <div class="mb-3">
+            <label for="emailRegister" class="form-label">Email address</label>
+            <input type="email" required class="form-control border-primary-subtle" id="emailRegister" aria-describedby="emailHelp" pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-3">
+            <label for="passwdRegister" class="form-label">Password</label>
+            <input type="password" required class="form-control border-primary-subtle" id="passwdRegister">
+          </div>
+          <div class="row justify-content-center">
+            <div id="alertRegister" class="alert col-11" role="alert">
+            </div>
+            <button type="button" id="btnRegister" class="btn btn-primary mb-3 col-3">Register</button>
+          </div>
+        </form>  
+      </div>
+    </div>
+    <div id="protected" class="row justify-content-center mt-5">
+      <h1 id="titleProtected"></h1>
+    </div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
